@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Admin Panel - Create Event</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <h1>Admin Panel - Event Creation</h1>
+
+  <!-- Admin Login -->
+  <div>
+    <input type="password" id="adminPassword" placeholder="Enter Admin Password">
+    <button id="loginButton">Login as Admin</button>
+  </div>
+
+  <!-- Event Form -->
+  <form id="eventForm">
+    <input type="text" id="title" placeholder="Title" required>
+    <textarea id="description" placeholder="Description" required></textarea>
+    <input type="date" id="date" required>
+    <input type="text" id="location" placeholder="Location" required>
+    <input type="text" id="category" placeholder="Category" required>
+    <input type="number" id="capacity" placeholder="Capacity" required>
+    <button type="submit">Create Event</button>
+  </form>
+
+  <h2>All Events</h2>
+  <div id="eventsContainer"></div>
+
+  <script type="module" src="dist/main.js"></script>
+  <script type="module">
+     import { loginAsAdmin } from './dist/main.js';
+     const loginButton = document.getElementById('loginButton');
+     const passwordInput = document.getElementById('adminPassword');
+     loginButton?.addEventListener('click', () => {
+      const password = passwordInput?.value || '';
+      loginAsAdmin(password);
+      });
+  </script>
+</body>
+</html>

@@ -1,0 +1,101 @@
+body {
+    margin: 0;
+    min-height: 100vh;
+    padding: 6%;
+    background: linear-gradient(135deg, #eef2ff, #e0e7ff);
+    font-family: "Segoe UI", Roboto, Arial, sans-serif;
+}
+
+/* ===== Main Container ===== */
+#main_container {
+    background-color: #ffffff;
+    min-height: 100vh;
+    border-radius: 18px;
+    padding: 40px;
+    display: flex;
+    flex-direction: column;
+    gap: 100px;
+    box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Header ===== */
+#header {
+    display: flex;
+    justify-content: space-between;
+    align-items: center;
+    background-color: #1e1b4b;
+    padding: 20px 28px;
+    border-radius: 16px;
+    color: #ffffff;
+}
+
+#nav1 {
+    display: flex;
+    align-items: center;
+    gap: 24px;
+}
+
+a {
+    color: #e0e7ff;
+    text-decoration: none;
+}
+
+a:hover {
+    color: #38bdf8;
+}
+
+/* ===== Dark Mode Button ===== */
+#mode {
+    height: 38px;
+    width: 38px;
+    border-radius: 50%;
+    background-color: #312e81;
+    color: #ffffff;
+    border: none;
+}
+
+/* ===== Hero Section ===== */
+#cont_body {
+    display: flex;
+    align-items: center;
+    justify-content: space-between;
+    gap: 60px;
+}
+
+#calendar_img {
+    height: 260px;
+    width: 260px;
+}
+
+#lpText {
+    max-width: 420px;
+}
+
+#lpt {
+    font-size: 46px;
+    font-weight: 800;
+    color: #1e1b4b;
+}
+
+/* ===== CTA Buttons ===== */
+#strbtn_container {
+    margin-top: 24px;
+    display: flex;
+    gap: 24px;
+}
+
+#startbtn,
+#startbtn1 {
+    height: 40px;
+    border-radius: 10px;
+    padding: 0 20px;
+    background-color: #1e1b4b;
+    color: #ffffff;
+    border: none;
+}
+
+#startbtn:hover,
+#startbtn1:hover {
+    background-color: #38bdf8;
+    color: #0f172a;
+}

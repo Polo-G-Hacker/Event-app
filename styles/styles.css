@@ -1,0 +1,161 @@
+/* ===== Global Reset & Base ===== */
+* {
+  box-sizing: border-box;
+}
+
+body {
+  margin: 0;
+  min-height: 100vh;
+  padding: 40px;
+  background: linear-gradient(135deg, #eef2f7, #e5ebf3);
+  font-family: "Segoe UI", Roboto, Arial, sans-serif;
+  color: #1f2937;
+}
+
+/* ===== Headings ===== */
+h1 {
+  font-size: 36px;
+  margin-bottom: 30px;
+  color: #0f172a;
+}
+
+h2 {
+  margin-top: 60px;
+  margin-bottom: 20px;
+  font-size: 28px;
+  color: #0f172a;
+}
+
+/* ===== Admin Login Section ===== */
+body > div {
+  display: flex;
+  gap: 16px;
+  align-items: center;
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  max-width: 600px;
+  box-shadow: 0 10px 25px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Inputs & Textarea ===== */
+input,
+textarea {
+  width: 100%;
+  padding: 12px 14px;
+  font-size: 14px;
+  border-radius: 8px;
+  border: 1px solid #cbd5e1;
+  font-family: inherit;
+}
+
+textarea {
+  resize: vertical;
+  min-height: 100px;
+}
+
+input:focus,
+textarea:focus {
+  outline: none;
+  border-color: #38bdf8;
+  box-shadow: 0 0 0 2px rgba(56, 189, 248, 0.2);
+}
+
+/* ===== Buttons ===== */
+button {
+  padding: 12px 18px;
+  font-size: 14px;
+  font-weight: 600;
+  border-radius: 8px;
+  border: none;
+  cursor: pointer;
+  background-color: #0f172a;
+  color: #ffffff;
+  transition: background-color 0.2s ease, transform 0.1s ease;
+}
+
+button:hover {
+  background-color: #38bdf8;
+  color: #0f172a;
+}
+
+button:active {
+  transform: translateY(2px);
+}
+
+/* ===== Event Form ===== */
+#eventForm {
+  margin-top: 40px;
+  max-width: 700px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  display: grid;
+  grid-template-columns: 1fr 1fr;
+  gap: 20px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+#eventSelect {
+  grid-column: span 2;
+  background-color: rgb(203, 202, 216);
+  color: rgb(0, 11, 42);
+} 
+
+/* Full-width fields */
+#eventForm textarea,
+#eventForm button {
+  grid-column: span 2;
+}
+
+#registrationForm {
+  margin-top: 40px;
+  display: grid;
+  flex-direction: column;
+  gap: 20px;
+  max-width: 500px;
+  background-color: #ffffff;
+  padding: 30px;
+  border-radius: 16px;
+  box-shadow: 0 12px 30px rgba(0, 0, 0, 0.08);
+}
+
+/* ===== Events List ===== */
+#eventsContainer {
+  max-width: 900px;
+  display: flex;
+  flex-direction: column;
+  gap: 20px;
+}
+
+/* Example event card styling (JS-generated content safe) */
+#eventsContainer > div {
+  background-color: #ffffff;
+  padding: 20px;
+  border-radius: 14px;
+  box-shadow: 0 10px 24px rgba(0, 0, 0, 0.08);
+  display: flex;
+  flex-direction: column;
+  gap: 8px;
+}
+
+/* ===== Responsive Adjustments ===== */
+@media (max-width: 768px) {
+  body {
+    padding: 20px;
+  }
+
+  #eventForm {
+    grid-template-columns: 1fr;
+  }
+
+  #eventForm textarea,
+  #eventForm button {
+    grid-column: span 1;
+  }
+
+  body > div {
+    flex-direction: column;
+    align-items: stretch;
+  }
+}

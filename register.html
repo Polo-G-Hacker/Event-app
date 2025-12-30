@@ -1,0 +1,28 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8">
+  <title>Register for Event</title>
+  <link rel="stylesheet" href="styles/styles.css">
+</head>
+<body>
+  <h1>Event Registration</h1>
+
+  <form id="registrationForm">
+    <input type="text" id="fullName" placeholder="E.g Kemdem Tatchim Adrien" required>
+    <input type="email" id="email" placeholder="E.g adrien.kemdem@saintjeaningenieur.org" required>
+    <select id="eventSelect" required>
+      <option value="">Select Event</option>
+      <option value="">Conference</option>
+      <option value="">Workshop</option>
+      <option value="">sport</option>
+    </select>
+    <button type="submit">Register</button>
+  </form>
+
+  <h2>All Events</h2>
+  <div id="eventsContainer"></div>
+
+  <script type="module" src="dist/main.js"></script>
+</body>
+</html>
